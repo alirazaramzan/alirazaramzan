@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ali Raza Ramzan | My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="shortcut icon" href="icon.png" type="image/icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,400;0,500;0,700;0,800;0,900;1,600&family=Urbanist:wght@200;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Urbanist', sans-serif;}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+
+
+
+.header {
+  font-size: x-large;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10%;
+}
+
+.header span {
+  font-family: Poppins, sans-serif;
+  font-size: larger;
+  font-weight: 600;
+  color: rgb(42, 130, 255);
+}
+
+
+.header h3 {
+  font-family: Poppins, sans-serif;
+  font-size: large;
+  font-weight: 400;
+}
+
+.header p {
+  padding: 1%;
+  font-family: Poppins, sans-serif;
+  font-size: large;
+  font-weight: 300;
+}
+
+
+#btn {
+  background-color: white;
+ --color: rgb(42, 130, 255);
+ font-family: inherit;
+ display: inline-block;
+ width: 8em;
+ height: 2.6em;
+ line-height: 2.5em;
+ margin: 20px;
+ position: relative;
+ overflow: hidden;
+ border: 2px solid var(--color);
+ transition: color .5s;
+ z-index: 1;
+ font-size: 17px;
+ border-radius: 6px;
+ font-weight: 500;
+ color: var(--color);
+}
+
+#btn:before {
+ content: "";
+ position: absolute;
+ z-index: -1;
+ background: var(--color);
+ height: 150px;
+ width: 200px;
+ border-radius: 50%;
+}
+
+#btn:hover {
+ color: #fff;
+}
+
+#btn:before {
+ top: 100%;
+ left: 100%;
+ transition: all .7s;
+}
+
+#btn:hover:before {
+ top: -30px;
+ left: -30px;
+}
+
+#btn:active:before {
+ background: rgb(42, 130, 255);
+ transition: background 0s;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">HOME</a>
+    <a href="portfolio.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">PROJECTS</a>
+    <a href="services.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">SERVICES</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">ABOUT</a>
+    <a href="https://forms.gle/vmBVuTZEJmJUSF1w5" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CONTACT</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="portfolio.html" class="w3-bar-item w3-button w3-padding-large">PROJECTS</a>
+    <a href="services.html" class="w3-bar-item w3-button w3-padding-large">SERVICES</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
+    <a href="https://forms.gle/vmBVuTZEJmJUSF1w5" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+  </div>
+</div>
+
+<!-- Header -->
+<div class="header">
+
+  <h1>Hi, I'm 
+  <span>Ali Raza Ramzan</span>
+  </h1>
+  <h3>Front-End & Python Programmer</h>
+  <br>
+<br>
+  <p>A talented and skilled programmer with expertise in both front-end development and Python programming. 
+    With over 1+ year of dedicated practice in these fields, 
+    Ali has honed his abilities to create simple and 
+    user-friendly interfaces 
+    while also mastering the art of Python programming. 
+    His passion for technology and innovation drives him to stay up-to-date with the latest trends and advancements in the tech world. 
+    Whether it's designing elegant front-end designs or writing efficient Python code, 
+    As a programmer, Ali Raza continually seeks to push the boundaries of what's possible, 
+    making him an valuable asset to any team or project.</p>
+    <a href="Ali Raza Ramzan_.pdf"> 
+    <button id="btn">Download CV
+    </button>
+  </a>  
+</div>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
